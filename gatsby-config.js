@@ -12,7 +12,13 @@ module.exports = {
         path: `${__dirname}/src/`,
       },
     },
-	`gatsby-plugin-netlify-cms`,
+    {
+      resolve: `gatsby-plugin-netlify-cms`,
+      options: {
+        name: `admin`,
+        path: `${__dirname}/static/`,
+      },
+    },	
     `gatsby-transformer-remark`,
     `gatsby-plugin-emotion`,
     {
